@@ -33,6 +33,7 @@ test_ds = FaultDataset(x_tr, y_tr)
 test_loader = DataLoader(test_ds, batch_size=BATCH,
                          shuffle=False, num_workers=4, pin_memory=CUDA)
 
+print("revised\n")
 # ────────────────────────────────────────────────────────────
 # 2. 모델 로드
 num_rows = y_tr.shape[2]   # (N,2,H) → H,W
